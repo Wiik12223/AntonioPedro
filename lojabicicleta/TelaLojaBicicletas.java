@@ -7,9 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 class TelaLojaBicicletas extends JFrame {
-    //private JSpinner aroSpinner;
-    //private JSpinner precoSpinner;
-    //private JSpinner quantidadeEstoqueSpinner;
     private ActionListener listener;
     private JButton btnCadastrar;
     private JButton btnAtualizar;
@@ -25,7 +22,7 @@ class TelaLojaBicicletas extends JFrame {
     private JTextField textFieldAro;
     private JTextField textFieldPreco;
     private JTextField textFieldQuantidadeEstoque;
-
+    LojaBicicletas loja = new LojaBicicletas();
     private List<Bicicleta> bicicletas;
     private List<String> marcasBicicletas;
     public char[] getListener;
@@ -49,9 +46,6 @@ class TelaLojaBicicletas extends JFrame {
         btnAtualizar = new JButton("Atualizar");
         botaoVender = new JButton("Vender");
         botaoExcluir = new JButton("Excluir");
-        //aroSpinner = new JSpinner();
-        //precoSpinner = new JSpinner();
-        //quantidadeEstoqueSpinner = new JSpinner();
 
         textFieldNomeCliente = new JTextField();
         spinnerQuantidadeVenda = new JSpinner();

@@ -15,7 +15,7 @@ class LojaBicicletas {
 
     public void adicionarBicicleta(Bicicleta bicicleta) {
         bicicletas.add(bicicleta);
-        mostrarBicicletas();
+        //mostrarBicicletas();
     }
 
     public void atualizarBicicleta(Bicicleta bicicleta) {

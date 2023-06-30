@@ -35,6 +35,7 @@ public class Main {
             
             tela.exibirBicicletas(loja.getBicicletas());
             tela.limparCamposCadastro();
+            loja.mostrarBicicletas();
         });
 
         tela.adicionarBotaoAtualizarListener(e -> {
@@ -54,6 +55,7 @@ public class Main {
 
                 tela.exibirBicicletas(loja.getBicicletas());
                 tela.limparCamposCadastro();
+                loja.mostrarBicicletas();
             }
         });
 
@@ -65,6 +67,7 @@ public class Main {
 
                 tela.exibirBicicletas(loja.getBicicletas());
                 tela.limparCamposCadastro();
+                loja.mostrarBicicletas();
             }
         });
     });
