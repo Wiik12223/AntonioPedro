@@ -28,7 +28,7 @@ class TelaLojaBicicletas extends JFrame {
 
     private List<Bicicleta> bicicletas;
     private List<String> marcasBicicletas;
-    private List<String> caminhosImagens;
+    public char[] getListener;
 
     public TelaLojaBicicletas() {
         // Configurações da janela
@@ -101,7 +101,7 @@ class TelaLojaBicicletas extends JFrame {
         // Inicializa as listas
         bicicletas = new ArrayList<>();
         marcasBicicletas = new ArrayList<>();
-        caminhosImagens = new ArrayList<>();
+        
     }
 
     public void exibirBicicletas(List<Bicicleta> bicicletas) {
@@ -117,10 +117,6 @@ class TelaLojaBicicletas extends JFrame {
 
     public void exibirImagem(int selectedIndex) {
         String marcaBicicleta = marcasBicicletas.get(selectedIndex);
-        String caminhoImagem = caminhosImagens.get(selectedIndex);
-        ImageIcon imagemIcon = new ImageIcon(caminhoImagem);
-        Image imagem = imagemIcon.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH);
-        imagemLabel.setIcon(new ImageIcon(imagem));
 
         // Obtém a bicicleta correspondente ao índice selecionado
         Bicicleta bicicleta = bicicletas.get(selectedIndex);
@@ -132,9 +128,6 @@ class TelaLojaBicicletas extends JFrame {
         JOptionPane.showMessageDialog(this, "Marca: " + marcaBicicleta + "\nAro: " + aro + "\nPreço: R$" + preco + "\nEstoque: " + quantidadeEstoque);
     }
 
-    public void adicionarImagemBicicleta(String marcaBicicleta, String caminhoImagem) {
-        caminhosImagens.add(caminhoImagem);
-    }
 
     public JButton getBotaoVender() {
         return botaoVender;

@@ -1,5 +1,5 @@
 import javax.swing.*;
-import java.io.File;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -13,16 +13,8 @@ public class Main {
     SwingUtilities.invokeLater(() -> {
         TelaLojaBicicletas tela = new TelaLojaBicicletas();
         tela.exibirBicicletas(loja.getBicicletas());
-
-        for (Bicicleta bicicleta : loja.getBicicletas()) {
-            String marcaBicicleta = bicicleta.getMarca();
-            String nomeImagem = marcaBicicleta + ".jpg";
-            String caminhoImagem = diretorioAtual + File.separator + "imagens" + File.separator + nomeImagem;
-            tela.adicionarImagemBicicleta(marcaBicicleta, caminhoImagem);
-        }
-
+        
         tela.setVisible(true);
-
         tela.adicionarBotaoVenderListener(e -> {
             int selectedIndex = tela.getBicicletasList().getSelectedIndex();
             if (selectedIndex >= 0) {
