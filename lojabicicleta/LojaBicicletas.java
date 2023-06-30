@@ -10,6 +10,7 @@ class LojaBicicletas {
 
     public LojaBicicletas() {
         bicicletas = new ArrayList<>();
+        
     }
 
     public void adicionarBicicleta(Bicicleta bicicleta) {
@@ -78,11 +79,11 @@ class LojaBicicletas {
         return bicicletas;
     }
 
-    public void salvarBicicletas(String nomeArquivo) {
+    public void salvarBicicletas(String nomeArquivo) throws IOException {
         try (PrintWriter writer = new PrintWriter(new FileWriter(nomeArquivo))) {
         for (Bicicleta bicicleta : bicicletas) {
             String linha = bicicleta.getMarca() + ", " + bicicleta.getAro() + ", " + bicicleta.getPreco() + ", " + bicicleta.getQuantidadeEstoque();
-            writer.println(linha);
+            writer.write(linha);
         }
         } catch (IOException e) {
             e.printStackTrace();
