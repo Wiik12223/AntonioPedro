@@ -1,0 +1,11 @@
+Caloi, 26, 899
+Trek, 29, 989
+Specialized, 27, 899
+Caloi Velox, 27, 1000
+Elleven Reactor, 29, 1700
+Sutton New, 29, 1450
+Saidx KSW, 29, 939
+TK3 Track KIRA, 27, 1700
+Oggi Big Wheel 7.3 2022, 29, 7800
+BMX, 20, 800
+Monark, 26, 1300
