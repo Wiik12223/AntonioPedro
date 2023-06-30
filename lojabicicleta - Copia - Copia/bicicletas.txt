@@ -1,4 +1,4 @@
-Caloi, 26, 899 , 6
+Caloi, 26, 899, 6
 Trek, 29, 989, 8
 Specialized, 27, 899, 3
 Caloi Velox, 27, 1000, 5
