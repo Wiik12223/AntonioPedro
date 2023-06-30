@@ -40,7 +40,7 @@ public class Main {
 
             Bicicleta bicicleta = new Bicicleta(marca, aro, preco, quantidadeEstoque);
             loja.adicionarBicicleta(bicicleta);
-            loja.salvarBicicletas("bicicletas.txt");
+            
             tela.exibirBicicletas(loja.getBicicletas());
             tela.limparCamposCadastro();
         });

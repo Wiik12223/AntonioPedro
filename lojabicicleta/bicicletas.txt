@@ -1,12 +1,11 @@
-Marca: Caloi, Aro: 26, Preço: 899, Quantidade em estoque: 6
-Marca: Trek, Aro: 29, Preço: 989, Quantidade em estoque: 8
-Marca: Specialized, Aro: 27, Preço: 899, Quantidade em estoque: 3
-Marca: Caloi Velox, Aro: 27, Preço: 1000, Quantidade em estoque: 5
-Marca: Elleven Reactor, Aro: 29, Preço: 1700, Quantidade em estoque: 5
-Marca: Sutton New, Aro: 29, Preço: 1450, Quantidade em estoque: 4
-Marca: Saidx KSW, Aro: 29, Preço: 939, Quantidade em estoque: 8
-Marca: TK3 Track KIRA, Aro: 27, Preço: 1700, Quantidade em estoque: 9
-Marca: Oggi Big Wheel 7.3 2022, Aro: 29, Preço: 7800, Quantidade em estoque: 2
-Marca: BMX, Aro: 20, Preço: 800, Quantidade em estoque: 12
-Marca: Monark, Aro: 26, Preço: 1300, Quantidade em estoque: 1
-Marca: jonathan, Aro: 27, Preço: 2500, Quantidade em estoque: 2
+Caloi, 26, 899, 6
+Trek, 29, 989, 8
+Specialized, 27, 899, 3
+Caloi Velox, 27, 1000, 5
+Elleven Reactor, 29, 1700, 5
+Sutton New, 29, 1450, 4
+Saidx KSW, 29, 939, 8
+TK3 Track KIRA, 27, 1700, 9
+Oggi Big Wheel 7.3 2022, 29, 7800, 2
+BMX, 20, 800, 12
+Monark, 26, 1300, 1

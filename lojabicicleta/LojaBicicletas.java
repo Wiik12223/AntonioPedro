@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -66,14 +65,14 @@ class LojaBicicletas {
                         // Lógica para lidar com a conversão de número inválido
                         continue;
                     }
-                Bicicleta bicicleta = new Bicicleta(marca, aro, preco, quantidadeEstoque);
-                adicionarBicicleta(bicicleta);
+                    Bicicleta bicicleta = new Bicicleta(marca, aro, preco, quantidadeEstoque);
+                    adicionarBicicleta(bicicleta);
+                }
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-    } catch (IOException e) {
-        e.printStackTrace();
     }
-}
 
     public List<Bicicleta> getBicicletas() {
         return bicicletas;
@@ -81,9 +80,10 @@ class LojaBicicletas {
 
     public void salvarBicicletas(String nomeArquivo) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(nomeArquivo))) {
-            for (Bicicleta bicicleta : bicicletas) {
-                writer.println(bicicleta.toString());
-            }
+        for (Bicicleta bicicleta : bicicletas) {
+            String linha = bicicleta.getMarca() + ", " + bicicleta.getAro() + ", " + bicicleta.getPreco() + ", " + bicicleta.getQuantidadeEstoque();
+            writer.println(linha);
+        }
         } catch (IOException e) {
             e.printStackTrace();
         }
